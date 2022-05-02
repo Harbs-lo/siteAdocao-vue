@@ -6,8 +6,8 @@ export default {
   components: {
     CabecalhoHeader,
     BlocoRodape,
-    BlocoPrincipal
-},
+    BlocoPrincipal,
+  },
 };
 </script>
 

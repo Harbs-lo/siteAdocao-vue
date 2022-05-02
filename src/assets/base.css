@@ -1,21 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
 body {
   margin: 0;
   height: 100vh;
+  background-color: #e9eaec;
+  font-family: "Alfa Slab One", cursive;
 }
 
 #app {
   height: 100%;
   display: grid;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 15% auto 10%;
   grid-template-rows: 10% auto 10%;
-  grid-template-areas: 
-    "header header"
-    "content content"
-    "footer footer";
-}
-
-#header, #content, #sidenav, #footer {
-  border: 1px solid black;
+  grid-template-areas:
+    "header header header"
+    "sidenav content side"
+    "footer footer footer";
 }
 
 #header {
@@ -31,4 +31,35 @@ body {
 }
 #sidenav {
   grid-area: sidenav;
+}
+
+.block {
+  min-width: 300px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 30px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  background-color: #c4c4c4;
+}
+
+.cabecalho {
+  background-color: #294973;
+  color: white;
+}
+
+.menuHorizontal {
+  font-size: xx-large;
+}
+
+.menuHorizontal li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 120px;
+}
+
+.menuHorizontal li:hover {
+  color: black;
 }
