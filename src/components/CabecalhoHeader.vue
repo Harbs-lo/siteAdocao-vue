@@ -4,15 +4,14 @@ export default {};
 
 <template>
   <header id="header" class="cabecalho">
-    <div class="menuHorizontal">
+    <div class="MenuHorizontal">
       <ul>
-        <li>Animais</li>
-        <li>Ajude</li>
-        <li>Denuncie</li>
-        <li>
-          <input type="text" name="" id="" />
-        </li>
-        <li>Login</li>
+        <li></li>
+        <li class="animais">animais</li>
+        <li class="ajude">ajude</li>
+        <li class="denuncie">denuncie</li>
+        <li><input type="text" name="" class="pesquisar" /></li>
+        <li><img class="login" src="@/assets/imagens/login2 .png" /></li>
       </ul>
     </div>
   </header>

@@ -11,15 +11,28 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 15% auto 10%;
-  grid-template-rows: 10% auto 10%;
+  grid-template-rows: 11% 10% 10% auto 10% 12%;
   grid-template-areas:
     "header header header"
+    "sidenav titu side"
+    "sidenav titulo side"
     "sidenav content side"
+    "sidenav titus  side"
     "footer footer footer";
+}
+
+#titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }
 
 #header {
   grid-area: header;
+  background-color: #294973;
+
 }
 #content {
   grid-area: content;
@@ -28,6 +41,12 @@ body {
 }
 #footer {
   grid-area: footer;
+  background-color: #294973;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
 }
 #sidenav {
   grid-area: sidenav;
@@ -50,16 +69,26 @@ body {
   color: white;
 }
 
-.menuHorizontal {
-  font-size: xx-large;
-}
-
-.menuHorizontal li {
-  list-style-type: none;
+.MenuHorizontal li {
   display: inline;
-  padding-left: 120px;
+  list-style-type: none;
+  padding: 50px;
+  font-size: 30px;
 }
 
-.menuHorizontal li:hover {
-  color: black;
+.MenuHorizontal li:hover {
+  text-shadow: 0.1em 0.1em 0.2em black
+  
+}
+
+.login {
+  width: 89px;
+  height: 68px;
+  
+}
+
+.logo {
+  border-radius: 80%;
+  width: 189px;
+  height: 126px;
 }

@@ -9,6 +9,10 @@ export default {
 </script>
 
 <template>
+  <aside id="titulo">
+    <h1>Ajude</h1>
+  </aside>
+
   <main id="content">
     <BlocoConteudo
       titulo="Toto"
