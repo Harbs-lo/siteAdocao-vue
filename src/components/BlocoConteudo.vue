@@ -1,28 +1,29 @@
 <script>
 export default {
+  data() {
+    return {
+      imagem: [new URL("./imagens/gato1.jpg", import.meta.url).href],
+    };
+  },
   props: {
     titulo: {
       default: "A definir",
     },
-    img: String,
+
     info: Array,
-  },
-  setup() {
-    const getImageUrl = (imagem) => {
-      return new URL(`${imagem}`, import.meta.url).href;
-    };
-    return { getImageUrl };
   },
 };
 </script>
 <template>
   <article class="block">
-    <h1>{{ titulo }} - {{ img }}</h1>
+    <div class="essa">
+      <img :src="imagem[0]" class="fotoAjude" />
+      <h1 class="titu">{{ titulo }}</h1>
+    </div>
     <hr />
     <ul>
       <li v-for="(info, i) of info" :key="i">{{ info }}</li>
     </ul>
-    <img src="getImageUrl(img)" />
   </article>
 </template>
 <style></style>

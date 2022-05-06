@@ -5,6 +5,7 @@ body {
   height: 100vh;
   background-color: #e9eaec;
   font-family: "Alfa Slab One", cursive;
+  letter-spacing: 3px;
 }
 
 #app {
@@ -27,13 +28,11 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  color: white;
 }
 
 #header {
   grid-area: header;
   background-color: #294973;
-
 }
 #content {
   grid-area: content;
@@ -65,6 +64,10 @@ body {
   background-color: #c4c4c4;
 }
 
+.block:hover {
+  border: solid #cad9ec 2px;
+}
+
 .cabecalho {
   background-color: #294973;
   color: white;
@@ -78,18 +81,33 @@ body {
 }
 
 .MenuHorizontal li:hover {
-  text-shadow: 0.1em 0.1em 0.2em black
-  
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .login {
   width: 89px;
   height: 68px;
-  
 }
 
 .logo {
   border-radius: 80%;
   width: 189px;
   height: 126px;
+}
+
+.fotoAjude {
+  border-radius: 50px;
+  width: 89px;
+  height: 68px;
+  border: 2px solid #000000;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.essa {
+  display: inline-flex;
+  padding: 10px;
+}
+
+.titu {
+  padding-left: 15px;
 }
