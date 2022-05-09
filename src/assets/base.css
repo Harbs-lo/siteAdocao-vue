@@ -71,13 +71,14 @@ body {
 .cabecalho {
   background-color: #294973;
   color: white;
+  display: inline-flex;
+  flex-direction: row;
 }
 
 .MenuHorizontal li {
-  display: inline;
-  list-style-type: none;
-  padding: 50px;
   font-size: 30px;
+  display: inline-flex;
+  flex-direction: row;
 }
 
 .MenuHorizontal li:hover {
@@ -93,6 +94,7 @@ body {
   border-radius: 80%;
   width: 189px;
   height: 126px;
+
 }
 
 .fotoAjude {
@@ -111,3 +113,4 @@ body {
 .titu {
   padding-left: 15px;
 }
+

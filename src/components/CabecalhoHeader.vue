@@ -1,5 +1,11 @@
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      imagem: new URL("./imagens/logo.jpg", import.meta.url).href,
+    };
+  },
+};
 </script>
 
 <template>
@@ -7,6 +13,7 @@ export default {};
     <div class="MenuHorizontal">
       <ul>
         <li></li>
+        <img :src="imagem" class="logo" />
         <li class="animais">animais</li>
         <li class="ajude">ajude</li>
         <li class="denuncie">denuncie</li>
