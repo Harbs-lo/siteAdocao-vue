@@ -8,8 +8,8 @@ export default {
     CabecalhoHeader,
     BlocoRodape,
     BlocoPrincipal,
-    BlocoLateral
-},
+    BlocoLateral,
+  },
 };
 </script>
 
