@@ -1,11 +1,9 @@
 <script>
-export default {
-};
+export default {};
 </script>
 
 <template>
-  <aside id="sidenav">
-  </aside>
+  <aside id="sidenav"></aside>
 </template>
 
 <style></style>
