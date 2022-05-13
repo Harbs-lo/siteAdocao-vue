@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      imagem: new URL("./imagens/logo.jpg", import.meta.url).href,
+      imagem: new URL("./imagens/logo12.png", import.meta.url).href,
     };
   },
 };

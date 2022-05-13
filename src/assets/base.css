@@ -92,17 +92,18 @@ body {
 }
 
 .nav-superior p {
-  font-size: 1.3em;
-  
+  font-size: x-large;
 }
 
 .MenuHorizontal input {
   border: 0;
-  height: 30px;
+  height: 35px;
   width: 20%;
-  border-radius: 20px;
+  border-radius: 15px;
   padding-left: 20px;
   margin-top: 3%;
+  font-size: large;
+  font-family: "Alfa Slab One", cursive;
 }
 
 .MenuHorizontal img {
@@ -119,11 +120,9 @@ body {
 }
 
 .logo {
-  border-radius: 70%;
-  width: 120px;
-  height: 100px;
-  margin-top: 3%;
-
+  width: 320px;
+  height: 300px;
+  margin-top: 5%;
 }
 
 .fotoAjude {

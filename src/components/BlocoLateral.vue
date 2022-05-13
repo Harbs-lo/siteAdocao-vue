@@ -5,9 +5,6 @@ export default {
 
 <template>
   <aside id="sidenav">
-    <img src="./imagens/patinha.png" alt="">
-    <img src="./imagens/patinha.png" alt="">
-    <img src="./imagens/patinha.png" alt="">
   </aside>
 </template>
 
