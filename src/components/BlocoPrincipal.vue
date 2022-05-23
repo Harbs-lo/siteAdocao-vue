@@ -5,6 +5,21 @@ export default {
   components: {
     BlocoConteudo,
   },
+  data() {
+    return {
+      animais: [
+        { nome: 'Cat', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Dog', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Tiba', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Rex', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Toto', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'River', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Artemos', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Simba', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+        { nome: 'Athena', img:"", info:['Cachorro', 'Feminino', 'Essa']},
+      ]
+    }
+  }
 };
 </script>
 
@@ -14,43 +29,12 @@ export default {
   </aside>
 
   <main id="content">
-    <BlocoConteudo titulo="Toto" :info="['Cachorro', 'Masculino', 'Essa']" />
-
-    <BlocoConteudo titulo="Tiba" :info="['Cachorro', 'Feminino', 'Essa']" />
-    <BlocoConteudo
-      titulo="Cat"
-      img=""
-      :info="['Cachorro', 'Feminino', 'Essa']"
-    />
-    <BlocoConteudo
-      titulo="Rex"
-      img=""
-      :info="['Cachorro', 'Masculino', 'Essa']"
-    />
-    <BlocoConteudo
-      titulo="Tiba"
-      img=""
-      :info="['Cachorro', 'Feminina', 'Essa']"
-    />
-    <BlocoConteudo
-      titulo="Artemis"
-      img=""
-      :info="['Gato', 'Feminino', 'Essa']"
-    />
-    <BlocoConteudo
-      titulo="River"
-      img=""
-      :info="['Cachorro', 'Feminino', 'Essa']"
-    />
-    <BlocoConteudo
-      titulo="Simba"
-      img=""
-      :info="['Gato', 'Masculino', 'Essa']"
-    />
-    <BlocoConteudo
-      titulo="Athena"
-      img=""
-      :info="['Cachorro', 'Feminino', 'Essa']"
+    <BlocoConteudo 
+      v-for="(animal, i) of animais"
+      :key="i"
+      :titulo="animal.nome"
+      :img="animal.igm"
+      :info="animal.info"
     />
   </main>
 </template>
